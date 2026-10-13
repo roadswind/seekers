@@ -34,6 +34,8 @@
     <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 
+    <!-- Google Calendar Appointment Scheduling: estilos y script compartidos por todos los botones -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -73,7 +75,23 @@
                     </g>
                 </svg>
             </a>
-            <button class="btn btn--lime btn--sm" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Hablemos</button>
+            <div class="cta-slot">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                  color: '#039BE5',
+                  label: 'Programar una cita',
+                  target,
+                });
+              });
+            })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+            </div>
         </div>
     </header>
 
@@ -83,10 +101,26 @@
         <section class="hero" data-hero aria-labelledby="hero-title">
             <div class="container hero__inner">
                 <div class="hero__copy">
-                    <h1 class="hero__title" id="hero-title">Contenido que llena mesas y habitaciones</h1>
-                    <p class="hero__lead">Somos el estudio creativo de restaurantes y hoteles en Latinoamérica. Foto, video y estrategia para que te encuentren, te antojen y te reserven.</p>
+                    <h1 class="hero__title" id="hero-title">Los creativos que disparan tus reservas</h1>
+                    <p class="hero__lead">Escala tu negocio con contenido diseñado para incrementar el ticket promedio, crecer tu base de clientes y aumentar la recurrencia</p>
                     <div class="hero__actions">
-                        <button class="btn btn--lime" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
+                        <div class="cta-slot">
+                        <!-- Google Calendar Appointment Scheduling begin -->
+                        <script>
+                        (function() {
+                          var target = document.currentScript;
+                          window.addEventListener('load', function() {
+                            calendar.schedulingButton.load({
+                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                              color: '#039BE5',
+                              label: 'Programar una cita',
+                              target,
+                            });
+                          });
+                        })();
+                        </script>
+                        <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
                         <a class="link link--lime" href="#casos">Ver casos de estudio</a>
                     </div>
                 </div>
@@ -97,29 +131,29 @@
                     <div class="hero__drift hero__drift--a">
                         <div class="hero__track hero__track--up">
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"></figure>
                             </div>
                             <div class="shots">
-                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="Un comensal disfruta su primer bocado" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones sobre una mesa de madera" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en el restaurante" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="Un comensal disfruta su primer bocado" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones sobre una mesa de madera" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en el restaurante" width="1000" height="1250" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"></figure>
                             </div>
                         </div>
                     </div>
@@ -128,29 +162,29 @@
                     <div class="hero__drift hero__drift--b">
                         <div class="hero__track hero__track--down">
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"></figure>
                             </div>
                             <div class="shots">
-                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en la terraza" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en la terraza" width="900" height="1600" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido" width="900" height="1600" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"></figure>
                             </div>
                             <div class="shots" aria-hidden="true">
-                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
-                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"></figure>
                             </div>
                         </div>
                     </div>
@@ -392,7 +426,23 @@
                                 <li class="tag">Redes sociales</li>
                                 <li class="tag">Reseñas</li>
                             </ul>
-                            <button class="btn btn--lime case-feature__cta" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Quiero algo así</button>
+                            <div class="cta-slot">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <script>
+                            (function() {
+                              var target = document.currentScript;
+                              window.addEventListener('load', function() {
+                                calendar.schedulingButton.load({
+                                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                                  color: '#039BE5',
+                                  label: 'Programar una cita',
+                                  target,
+                                });
+                              });
+                            })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                            </div>
                         </div>
                     </article>
 
@@ -433,7 +483,23 @@
             <div class="footer__cta">
                 <h2 class="footer__title">¿Listo para llenar tus mesas y habitaciones?</h2>
                 <div class="footer__actions">
-                    <button class="btn btn--lime" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
+                    <div class="cta-slot">
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <script>
+                    (function() {
+                      var target = document.currentScript;
+                      window.addEventListener('load', function() {
+                        calendar.schedulingButton.load({
+                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                          color: '#039BE5',
+                          label: 'Programar una cita',
+                          target,
+                        });
+                      });
+                    })();
+                    </script>
+                    <!-- end Google Calendar Appointment Scheduling -->
+                    </div>
                     <a class="link link--lime" href="mailto:david@seekers-latam.com">david@seekers-latam.com</a>
                 </div>
             </div>
@@ -461,7 +527,25 @@
                     <p class="footer__col-title">Contacto</p>
                     <ul class="footer__list">
                         <li><a href="mailto:david@seekers-latam.com">david@seekers-latam.com</a></li>
-                        <li><a href="#contacto" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' onclick="event.preventDefault();">Agenda una llamada</a></li>
+                        <li>
+                            <div class="cta-slot">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <script>
+                            (function() {
+                              var target = document.currentScript;
+                              window.addEventListener('load', function() {
+                                calendar.schedulingButton.load({
+                                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                                  color: '#039BE5',
+                                  label: 'Programar una cita',
+                                  target,
+                                });
+                              });
+                            })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -489,13 +573,7 @@
         </ul>
     </nav>
 
-    <!-- Cal.com -->
-    <script type="text/javascript">
-    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    Cal("init", "intro", {origin:"https://app.cal.com"});
-    Cal.ns.intro("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#211828"},"dark":{"cal-brand":"#FFFBEE"}},"hideEventTypeDetails":false,"layout":"month_view"});
-    </script>
-
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>

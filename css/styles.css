@@ -152,47 +152,13 @@ footer[id] {
 }
 
 /* --------------------------------------------------------------------------
-   Botones y enlaces
+   Enlaces y botón de agendar (Google Calendar)
    -------------------------------------------------------------------------- */
-.btn {
+/* Contenedor del botón de Google Calendar (el botón lo dibuja el script de Google) */
+.cta-slot {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem 1.75rem;
-    border: 0;
-    border-radius: 999px;
-    font: 600 1rem/1 var(--font-body);
-    white-space: nowrap;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 0.25s var(--ease), background-color 0.25s, color 0.25s;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-.btn--lime {
-    background: var(--lime);
-    color: var(--ink);
-}
-
-.btn--lime:hover {
-    background: #f6ff3a;
-}
-
-.btn--ink {
-    background: var(--ink);
-    color: var(--cream);
-}
-
-.btn--ink:hover {
-    background: var(--ink-3);
-}
-
-.btn--sm {
-    padding: 0.7rem 1.25rem;
-    font-size: 0.9375rem;
+    vertical-align: middle;
 }
 
 .link {
@@ -395,19 +361,6 @@ footer[id] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.shot__tag {
-    position: absolute;
-    left: 0.9rem;
-    bottom: 0.9rem;
-    padding: 0.5rem 0.9rem;
-    border-radius: 999px;
-    background: var(--cream);
-    color: var(--ink);
-    font: 700 0.9rem/1 var(--font-display);
-    letter-spacing: -0.01em;
-    transform: rotate(var(--tilt, -3deg));
 }
 
 @keyframes track-up {
@@ -1019,7 +972,7 @@ footer[id] {
     border-color: var(--line-on-ink);
 }
 
-.case-feature__cta {
+.case-feature__body .cta-slot {
     align-self: flex-start;
     margin-top: 0.5rem;
 }
@@ -1242,7 +1195,6 @@ footer[id] {
         overflow-x: auto;
     }
 
-    .btn,
     .services__media img {
         transition: none;
     }
