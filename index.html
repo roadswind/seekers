@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Codificación y Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--SEO: título y descripción-->
-    <title>Seekers - Estrategias creativas para marcas Fintech</title>
-    <meta name="description" content="En Seekers, creamos estrategias creativas de crecimiento para marcas líderes en Fintech. Generando adopción, reduciendo el abandono y convirtiendo cuentas zombis en usuarios activos.">
-    <meta name="keywords" content="Seekers, agencia fintech, estrategias de crecimiento fintech, agencia contenido fintech, growth marketing fintech, video marketing fintech, narrativas para startups cripto, estrategia audiovisual cripto, marketing para wallets digitales, product marketing fintech, adquisición de usuarios fintech, storytelling financiero, branding para bancos digitales, videos explicativos cripto, retención de usuarios apps financieras, agencia de marketing bancario, experiencia de usuario fintech, marketing para startups blockchain, contenido para plataformas defi, producción audiovisual fintech">
+    <!-- SEO -->
+    <title>Seekers | Contenido creativo para restaurantes y hoteles</title>
+    <meta name="description" content="Estudio creativo de contenido para restaurantes y hoteles en Latinoamérica. Fotografía, video y estrategia que llenan tus mesas y tus habitaciones.">
     <meta name="author" content="Seekers LATAM S.A.S">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seekers-latam.com/">
 
-    <!--Social:Open Graph-->
-    <meta property="og:title" content="Seekers - Estrategias creativas para marcas Fintech">
-    <meta property="og:description" content="En Seekers, creamos estrategias creativas de crecimiento para marcas líderes en Fintech. Generando adopción, reduciendo el abandono y convirtiendo cuentas zombis en usuarios activos.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Seekers | Contenido creativo para restaurantes y hoteles">
+    <meta property="og:description" content="Fotografía, video y estrategia para restaurantes y hoteles en Latinoamérica. Contenido que llena mesas y habitaciones.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://seekers,lat/assets/brand/opengraph.png">
-    <meta property="og:url" content="https://seekers.lat"> <!-- si tienes dominio -->
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:url" content="https://seekers-latam.com/">
+    <meta property="og:image" content="https://seekers-latam.com/assets/brand/opengraph.png">
 
-    <!-- Social: Twitter Cards-->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Seekers - Estrategias creativas para marcas Fintech">
-    <meta name="twitter:description" content="Estrategias creativas para crecimiento en Fintech. Adopción, retención y activación real.">
-    <meta name="twitter:image" content="/assets/brand/opengraph.png">
+    <meta name="twitter:title" content="Seekers | Contenido creativo para restaurantes y hoteles">
+    <meta name="twitter:description" content="Fotografía, video y estrategia para restaurantes y hoteles en Latinoamérica.">
+    <meta name="twitter:image" content="https://seekers-latam.com/assets/brand/opengraph.png">
 
-    <!-- Favicon y app icons-->
-    <link rel="icon" href="assets/brand/favicon.svg" type="image/png">
-    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png.png"> <!-- 180x180 -->
-    <link rel="manifest" href="/site.webmanifest"> <!-- si vas a hacer un PWA más adelante -->
+    <!-- Iconos -->
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png.png">
+    <meta name="theme-color" content="#211828">
 
-    <!--Tipografías-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <!--CSS-->
+    <!-- Fuentes alojadas en el repo -->
+    <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Theme para navegadores móviles -->
-    <meta name="theme-color" content="#211828"> <!-- cambia por tu color principal -->
 </head>
 
-<body>
-    <!--Header-->
-    <header>
-        <nav class="header-nav">
-            <a href="index.html" class="header-logo" aria-label="Ir a la página de inicio de Seekers">
-                <svg id="Seekers-logo-header" data-name="Seekers logo" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 3450 650" preserveAspectRatio="xMidYMid meet">
+<body id="top">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#top" aria-label="Seekers, ir al inicio">
+                                <svg class="brand__svg" id="Seekers-logo-header" aria-hidden="true" focusable="false" data-name="Seekers logo" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 3450 650" preserveAspectRatio="xMidYMid meet">
                     <defs>
                         <style>
-                            .cls-1 { fill: url(#Degradado_sin_nombre_17); }
-                            .cls-2 { fill: #fffbee; }
-                            .cls-3 { fill: #eaf205; }
-                            
-                            /* Controlamos la rotación desde aquí para asegurar el centro */
-                            #Icon { 
-                            transform-origin: 270px 270px; /* Centro exacto del icono */
-                            transition: transform 0.4s ease-in-out;
-                            }
-                            #Seekers-logo-header:hover #Icon {
-                            transform: rotate(360deg);
-                            }
-                        </style>
+.cls-1 { fill: url(#Degradado_sin_nombre_17); }
+.cls-2 { fill: #fffbee; }
+.cls-3 { fill: #eaf205; }
+</style>
                         <linearGradient id="Degradado_sin_nombre_17" data-name="Degradado sin nombre 17" x1="79.26" y1="461.94" x2="448.83" y2="92.36" gradientUnits="userSpaceOnUse">
                             <stop offset=".5" stop-color="#eaf205"/>
                             <stop offset=".5" stop-color="#fffbee"/>
@@ -85,228 +73,429 @@
                     </g>
                 </svg>
             </a>
-        </nav>
+            <button class="btn btn--lime btn--sm" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Hablemos</button>
+        </div>
     </header>
-    <!--Hero-->
-    <main>
-        <section id="hero">
-            <div class="wrapper">
-                <div class="hero-texts">
-                    <h1>Los estrategas creativos detrás del crecimiento de tu negocio</h1>
-                    <p>Reduce el abandono, aumenta la adopción y maximiza el LTV.</p>
-                    <div>
-                        <!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-      color: '#fffbee',
-      label: "Agenda una llamada",
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+
+    <main id="contenido">
+
+        <!-- Hero -->
+        <section class="hero" data-hero aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <h1 class="hero__title" id="hero-title">Contenido que llena mesas y habitaciones</h1>
+                    <p class="hero__lead">Somos el estudio creativo de restaurantes y hoteles en Latinoamérica. Foto, video y estrategia para que te encuentren, te antojen y te reserven.</p>
+                    <div class="hero__actions">
+                        <button class="btn btn--lime" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
+                        <a class="link link--lime" href="#casos">Ver casos de estudio</a>
                     </div>
                 </div>
-                <div class="hero-showcase">
-                    <div class="hero-column">
-                        <div class="scrolling-content scroll-up">
-                            <figure><img src="assets/images/F1 - ¡¡Gool!!.jpg" alt="Patio Sanduchería"></figure>
-                            <figure><img src="assets/images/DSCF4135.jpg" alt="Patio Sanduchería"></figure>
-                            <figure><img src="assets/images/DSCF4052.jpg" alt="Patio Sanduchería"></figure>
+            </div>
 
-                            <figure aria-hidden="true"><img src="assets/images/F1 - ¡¡Gool!!.jpg" alt="Patio Sanduchería"></figure>
-                            <figure aria-hidden="true"><img src="assets/images/DSCF4135.jpg" alt="Patio Sanduchería"></figure>
-                            <figure aria-hidden="true"><img src="assets/images/DSCF4052.jpg" alt="Patio Sanduchería"></figure>
-                        </div>
-                    </div>
-                    <div class="hero-column">
-                        <div class="scrolling-content scroll-down">
-                            <figure><img src="assets/images/F6 - Bolsa de domi.jpg" alt="Patio Sanduchería"></figure>
-                            <figure><img src="assets/images/S14 - Tarde de sol.jpg" alt="Patio Sanduchería"></figure>
-                            <figure><img src="assets/images/S10 - Cochinillo.jpg" alt="Patio Sanduchería"></figure>
-
-                            <figure aria-hidden="true"><img src="assets/images/F6 - Bolsa de domi.jpg" alt="Patio Sanduchería"></figure>
-                            <figure aria-hidden="true"><img src="assets/images/S14 - Tarde de sol.jpg" alt="Patio Sanduchería"></figure>
-                            <figure aria-hidden="true"><img src="assets/images/S10 - Cochinillo.jpg" alt="Patio Sanduchería"></figure>
+            <div class="hero__wall">
+                <div class="hero__col">
+                    <div class="hero__drift hero__drift--a">
+                        <div class="hero__track hero__track--up">
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                            </div>
+                            <div class="shots">
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="Un comensal disfruta su primer bocado" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones sobre una mesa de madera" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en el restaurante" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-primer-bocado.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Primer bocado</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-plato.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Plato fuerte</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:-2deg">¡Gooool!</figcaption></figure>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Clientes -->
-        <section id="clients">
-            <div class="wrapper">
-                <h2>Marcas que confían en nosotros</h2>
-                <div class="clients-logos">
-                    <img src="assets/clients/Banco Falabella.svg" alt="Banco Falabella">
-                    <img src="assets/clients/OKX.svg" alt="OKX">
-                    <img src="assets/clients/BitPay.svg" alt="BitPay">
-                    <img src="assets/clients/DolarApp.svg" alt="DolarApp">
-                    <img src="assets/clients/Cisco.svg" alt="Cisco">
+                <div class="hero__col">
+                    <div class="hero__drift hero__drift--b">
+                        <div class="hero__track hero__track--down">
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                            </div>
+                            <div class="shots">
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en la terraza" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                            </div>
+                            <div class="shots" aria-hidden="true">
+                                <figure class="shot"><img src="assets/img/patio-domicilio.webp" alt="" width="1000" height="1250" decoding="async"><figcaption class="shot__tag" style="--tilt:3deg">Domicilio</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-tarde-de-sol.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:-3deg">Tarde de sol</figcaption></figure>
+                                <figure class="shot"><img src="assets/img/patio-sandwich.webp" alt="" width="900" height="1600" decoding="async"><figcaption class="shot__tag" style="--tilt:2deg">Cochinillo</figcaption></figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--Problemas-->
-        <section id="problems">
-            <div class="wrapper">
-                <h2>¿Algo de esto te suena?</h2>
-                <p>Sabemos que resonar con los usuarios no es tarea fácil.</p>
-                <ul class="problems-list">
-                    <li class="problems-list-item">
-                        <h3>La sordera</h3>
-                        <p>Botaste la casa por la ventana para que registraran sus llaves de Bre-B contigo y... no fue lo que esperabas. Son como tu perro ignorándote en el parque.</p>
+
+        <!-- Marcas -->
+        <section class="logos on-cream" aria-labelledby="logos-label">
+            <div class="container">
+                <p class="logos__label" id="logos-label">Marcas que ya crean con nosotros</p>
+            </div>
+            <div class="logos__row">
+                <div class="logos__track">
+                    <div class="logos__set"><img src="assets/clients/Banco Falabella.svg" alt="Banco Falabella" height="36"><img src="assets/clients/OKX.svg" alt="OKX" height="36"><img src="assets/clients/BitPay.svg" alt="BitPay" height="36"><img src="assets/clients/DolarApp.svg" alt="DolarApp" height="36"><img src="assets/clients/Cisco.svg" alt="Cisco" height="36"></div>
+                    <div class="logos__set" aria-hidden="true"><img src="assets/clients/Banco Falabella.svg" alt="" height="36"><img src="assets/clients/OKX.svg" alt="" height="36"><img src="assets/clients/BitPay.svg" alt="" height="36"><img src="assets/clients/DolarApp.svg" alt="" height="36"><img src="assets/clients/Cisco.svg" alt="" height="36"></div>
+                    <div class="logos__set" aria-hidden="true"><img src="assets/clients/Banco Falabella.svg" alt="" height="36"><img src="assets/clients/OKX.svg" alt="" height="36"><img src="assets/clients/BitPay.svg" alt="" height="36"><img src="assets/clients/DolarApp.svg" alt="" height="36"><img src="assets/clients/Cisco.svg" alt="" height="36"></div>
+                    <div class="logos__set" aria-hidden="true"><img src="assets/clients/Banco Falabella.svg" alt="" height="36"><img src="assets/clients/OKX.svg" alt="" height="36"><img src="assets/clients/BitPay.svg" alt="" height="36"><img src="assets/clients/DolarApp.svg" alt="" height="36"><img src="assets/clients/Cisco.svg" alt="" height="36"></div>
+                    <div class="logos__set" aria-hidden="true"><img src="assets/clients/Banco Falabella.svg" alt="" height="36"><img src="assets/clients/OKX.svg" alt="" height="36"><img src="assets/clients/BitPay.svg" alt="" height="36"><img src="assets/clients/DolarApp.svg" alt="" height="36"><img src="assets/clients/Cisco.svg" alt="" height="36"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ventajas -->
+        <section class="section section--ink" id="ventajas" aria-labelledby="ventajas-title">
+            <div class="container">
+                <header class="head">
+                    <h2 class="head__title" id="ventajas-title">Crear contenido con nosotros es fácil y sin enredos</h2>
+                    <p class="head__lead">Tú sigues atendiendo a tus clientes. Nosotros nos encargamos de que se enteren de lo bueno que haces.</p>
+                </header>
+
+                <ul class="perks">
+                    <li class="perk perk--lime perk--wide">
+                        <span class="perk__icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.3A8 8 0 1 1 21 12Z"/></svg>
+                        </span>
+                        <h3 class="perk__title">Empezamos con una conversación</h3>
+                        <p class="perk__text">Una llamada para entender tu restaurante o tu hotel, tus retos y lo que quieres lograr. El plan sale de ahí, no de una plantilla.</p>
                     </li>
-                    <li class="problems-list-item">
-                        <h3>El ghosting</h3>
-                        <p>Se registraron, completaron el KYC, depositaron 10USDT y luego desaparecieron. Como un mal amor, dejaron a la plataforma en visto.</p>
+                    <li class="perk perk--wide">
+                        <span class="perk__icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M2.5 9h19M7 4.5 9.5 9M12.5 4.5 15 9M18 4.5 20.5 9"/></svg>
+                        </span>
+                        <h3 class="perk__title">Mirada de cine en cada pieza</h3>
+                        <p class="perk__text">Dirigimos cada sesión como un set: luz, encuadre y ritmo pensados para que lo que muestras se vea tan bien como se vive.</p>
                     </li>
-                    <li class="problems-list-item">
-                        <h3>La resistencia</h3>
-                        <p>El mejor precio de dólar, ETFs en un par de clics, UX/UI de ensueño. Lo tienen todo, pero por alguna razón los usuarios siguen confiándole su dinero a ese viejo banco con rendimientos microscópicos.</p>
+                    <li class="perk perk--third">
+                        <span class="perk__icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.2 6-5.2s5.4 1.8 6 5.2"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.1 4.2 1.7 4.7 4.3"/></svg>
+                        </span>
+                        <h3 class="perk__title">Un solo equipo para todo</h3>
+                        <p class="perk__text">Foto, video, motion y estrategia con las mismas personas. Una voz para tu marca, sin coordinar cinco proveedores.</p>
+                    </li>
+                    <li class="perk perk--third">
+                        <span class="perk__icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="6.5" width="17" height="12" rx="2.5"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8.5 6.5 9.6 4.5h4.8l1.1 2"/></svg>
+                        </span>
+                        <h3 class="perk__title">Una sesión, semanas de contenido</h3>
+                        <p class="perk__text">Producimos en sitio y entregamos alrededor de 20 piezas por sesión, reels incluidos, listas para publicar.</p>
+                    </li>
+                    <li class="perk perk--third">
+                        <span class="perk__icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17 10 11l4 4 6-7"/><path d="M15 8h5v5"/></svg>
+                        </span>
+                        <h3 class="perk__title">Un sistema que escala contigo</h3>
+                        <p class="perk__text">Lo que funciona en una sede se replica en la siguiente. Sin empezar de cero cada vez, sea un local o una cadena.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <!--Proceso-->
-        <section id="process">
-            <div class="wrapper">
-                <h2>¿Cómo funciona?</h2>
-                <ul class="process-steps-container">
-                    <li class="process-steps">
-                        <img src ="assets/images/pexels-julia-m-cameron-4145190.jpg" alt="Paso 1">
-                        <p>Paso 1</p>
-                        <h3>Agendas una llamada</h3>
-                        <p>Conocemos más acerca de tu negocio y encontramos la mejor estrategia para tus necesidades y presupuesto.</p>
+
+        <!-- Cifras -->
+        <section class="section section--lime" id="cifras" aria-labelledby="cifras-title">
+            <div class="container">
+                <header class="head" style="margin-bottom:0">
+                    <h2 class="head__title" id="cifras-title">Contenido con números detrás</h2>
+                    <p class="head__lead">Aplicamos a la hospitalidad el mismo rigor con el que medimos el contenido de marcas fintech: probamos, medimos y repetimos lo que funciona.</p>
+                </header>
+
+                <ul class="stats__grid">
+                    <li class="stat">
+                        <p class="stat__value" data-count="20" data-decimals="0">20</p>
+                        <p class="stat__label"><strong>piezas de contenido</strong> por cada sesión de producción en sitio.</p>
                     </li>
-                    <li class="process-steps">
-                        <img src ="assets/images/pexels-ron-lach-8088386.jpg" alt="Paso 2">
-                        <p>Paso 2</p>
-                        <h3>Nos ponemos en marcha</h3>
-                        <p>Trabajamos con talento A+, AI-free para desarrollar las estrategias que atacarán tus KPIs con precisión y a velocidad de startup.</p>
+                    <li class="stat">
+                        <p class="stat__value" data-count="2.5" data-decimals="1" data-suffix="x">2.5x</p>
+                        <p class="stat__label"><strong>más valor por usuario</strong> (LTV) en cohortes clave de fintech.</p>
                     </li>
-                    <li class="process-steps">
-                        <img src ="assets/images/pexels-fauxels-3184428.jpg" alt="Paso 3">
-                        <p>Paso 3</p>
-                        <h3>Te acompañamos de cerca</h3>
-                        <p>Somos tus aliados. Seguimos de cerca tu crecimiento para aprender y proyectar tu siguiente movimiento.</p>
+                    <li class="stat">
+                        <p class="stat__value" data-count="34" data-decimals="0" data-prefix="−" data-suffix="%">−34%</p>
+                        <p class="stat__label"><strong>menos costo de adquisición</strong> en campañas de fintech.</p>
                     </li>
-                </ul>
-            </div>
-        </section>
-        <!--Métricas-->
-        <section id="metrics">
-            <div class="wrapper">
-                <h2>Métricas que tu CFO amará</h2>
-                <p>En un sector donde la confianza es la métrica más volátil, nosotros la hacemos predecible. Nuestras narrativas no buscan sólo likes, atacan los KPIs que definen tu crecimiento: Adopción, LTV y Coste de Adquisición.</p>
-                <ul>
-                    <li>
-                        <h3>-34%</h3>
-                        <p><span>Reducción del Coste de Adquisición de Creyentes (CAC).</span> Convertimos no coiners y escépticos en usuarios educados y leales, optimizando cada dólar de tu pauta.</p>
-                    </li>
-                    <li>
-                        <h3>2.5x</h3>
-                        <p><span>Incremento del Lifetime Value (LTV) en cohortes clave.</span>Nuestras historias hacen que los usuarios no solo lleguen, sino que se queden, entiendan y usen tus productos más avanzados.</p>
-                    </li>
-                    <li>
-                        <h3>-41%</h3>
-                        <p><span>Reducción del Churn Rate en los primeros 90 días.</span> Un onboarding narrativo que transforma la fricción inicial en una experiencia de ajá, lo entiendo , blindando tu base de usuarios.</p>
+                    <li class="stat">
+                        <p class="stat__value" data-count="41" data-decimals="0" data-prefix="−" data-suffix="%">−41%</p>
+                        <p class="stat__label"><strong>menos abandono</strong> en los primeros 90 días de usuarios nuevos.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <!--Nosotros-->
-        <section id="about">
-            <div class="wrapper">
-                <div class="about-heading">
-                    <h2>No nos disfrazamos de creativos, lo demostramos en el campo</h2>
-                </div>
-                <div class="about-paragraph">
-                    <p>Seekers no es un estudio de producción más. Somos estrategas narrativos, creativos audaces y analistas de mercado obsesionados con el sector Fintech y Cripto. Surgimos para cerrar la brecha mortal entre la innovación de producto y la comunicación de mercado. Mientras otros persiguen premios de publicidad con tu presupuesto, nosotros nos concentramos en el crecimiento de tu plataforma. Trabajamos con marcas que no solo quieren participar en el futuro de las finanzas, sino que están decididas a escribirlo.</p>
+
+        <!-- Testimonios -->
+        <!-- PENDIENTE: reemplaza los textos entre corchetes con citas reales de clientes antes de publicar. -->
+        <section class="section section--cream on-cream" id="testimonios" aria-labelledby="testimonios-title" style="overflow:hidden">
+            <div class="container">
+                <header class="head head--split">
+                    <h2 class="head__title" id="testimonios-title">Lo que dicen quienes ya crean con nosotros</h2>
+                    <div class="quotes-nav">
+                        <button class="round-btn" type="button" data-quotes-step="-1" aria-label="Testimonio anterior">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                        </button>
+                        <button class="round-btn" type="button" data-quotes-step="1" aria-label="Testimonio siguiente">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </header>
+            </div>
+
+            <div class="quotes" data-quotes tabindex="0" aria-label="Testimonios de clientes">
+                <figure class="quote">
+                    <blockquote class="quote__text">“[Cita real del cliente: qué problema tenía y qué cambió después de trabajar con Seekers.]”</blockquote>
+                    <figcaption class="quote__who">
+                        <span class="quote__avatar" aria-hidden="true">P</span>
+                        <span>
+                            <span class="quote__name">[Nombre y cargo]</span><br>
+                            <span class="quote__role">Patio Sanduchería</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="quote">
+                    <blockquote class="quote__text">“[Cita real del cliente: qué fue lo más fácil de trabajar con nosotros.]”</blockquote>
+                    <figcaption class="quote__who">
+                        <span class="quote__avatar" aria-hidden="true">R</span>
+                        <span>
+                            <span class="quote__name">[Nombre y cargo]</span><br>
+                            <span class="quote__role">[Restaurante u hotel]</span>
+                        </span>
+                    </figcaption>
+                </figure>
+                <figure class="quote">
+                    <blockquote class="quote__text">“[Cita real del cliente: qué resultado notó en su negocio.]”</blockquote>
+                    <figcaption class="quote__who">
+                        <span class="quote__avatar" aria-hidden="true">H</span>
+                        <span>
+                            <span class="quote__name">[Nombre y cargo]</span><br>
+                            <span class="quote__role">[Restaurante u hotel]</span>
+                        </span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="section section--ink" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="head">
+                    <h2 class="head__title" id="servicios-title">Todo lo que tu mesa y tu habitación necesitan contar</h2>
+                </header>
+
+                <div class="services" data-tabs>
+                    <div role="tablist" aria-label="Servicios" aria-orientation="vertical">
+                        <div class="svc">
+                            <button class="svc__tab" role="tab" id="tab-foto" aria-controls="panel-foto" aria-selected="true">Fotografía gastronómica</button>
+                            <div class="svc__panel" role="tabpanel" id="panel-foto" aria-labelledby="tab-foto">
+                                <p class="svc__text">Platos, bebidas y espacios que se antojan antes del primer bocado.</p>
+                                <ul class="svc__list">
+                                    <li class="tag">Sesión en sitio</li>
+                                    <li class="tag">Edición y color</li>
+                                    <li class="tag">Fotos para carta, redes y delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="svc">
+                            <button class="svc__tab" role="tab" id="tab-video" aria-controls="panel-video" aria-selected="false" tabindex="-1">Video y reels</button>
+                            <div class="svc__panel" role="tabpanel" id="panel-video" aria-labelledby="tab-video" hidden>
+                                <p class="svc__text">Piezas cortas con ritmo de cine para redes, pantallas y pauta.</p>
+                                <ul class="svc__list">
+                                    <li class="tag">Reels y videos verticales</li>
+                                    <li class="tag">Comerciales cortos</li>
+                                    <li class="tag">3D y motion graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="svc">
+                            <button class="svc__tab" role="tab" id="tab-estrategia" aria-controls="panel-estrategia" aria-selected="false" tabindex="-1">Estrategia y redes</button>
+                            <div class="svc__panel" role="tabpanel" id="panel-estrategia" aria-labelledby="tab-estrategia" hidden>
+                                <p class="svc__text">Entendemos tus retos y tus deseos, y los convertimos en un plan de contenido que se publica y se mide.</p>
+                                <ul class="svc__list">
+                                    <li class="tag">Diagnóstico</li>
+                                    <li class="tag">Línea editorial</li>
+                                    <li class="tag">Calendario y publicación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="svc">
+                            <button class="svc__tab" role="tab" id="tab-hoteles" aria-controls="panel-hoteles" aria-selected="false" tabindex="-1">Hoteles y destinos</button>
+                            <div class="svc__panel" role="tabpanel" id="panel-hoteles" aria-labelledby="tab-hoteles" hidden>
+                                <p class="svc__text">Contamos la experiencia completa: habitaciones, gastronomía, entorno y la gente que lo vive.</p>
+                                <ul class="svc__list">
+                                    <li class="tag">Recorridos en video</li>
+                                    <li class="tag">Habitaciones y espacios</li>
+                                    <li class="tag">Contenido de destino</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__media">
+                        <img data-tab-image class="is-active" src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido, fotografiado de cerca" width="900" height="1600" loading="lazy" decoding="async">
+                        <img data-tab-image src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en el restaurante, fotograma de un reel" width="1000" height="1250" loading="lazy" decoding="async">
+                        <img data-tab-image src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel" width="1000" height="1250" loading="lazy" decoding="async">
+                        <img data-tab-image src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en una terraza soleada" width="900" height="1600" loading="lazy" decoding="async">
+                    </div>
                 </div>
             </div>
         </section>
-        <!--Servicios-->
-        <section id="services">
-            <div class="wrapper">
-                <div class="services-text">
-                    <h2>Tu arsenal narrativo especializado</h2>
-                    <p>Creamos experiencias audiovisuales basadas en sentimiento de mercado que acompañan el día a día de los usuarios, llamándolos a la acción para incrementar su LTV.</p>
-                    <ul>
-                        <li class="services-list-item">
-                            <p>01</p>
-                            <div>
-                                <h3>Detonadores de adopción</h3>
-                                <p>Comerciales, DOOH, anuncios y contenido para redes sociales, 3D y Motion Graphics para lanzamientos de features y productos.</p>
-                            </div>
-                        </li>
-                        <li class="services-list-item">
-                            <p>02</p>
-                            <div>
-                                <h3>Activadores de zombis</h3>
-                                <p>Assets para gamificar experiencias, banners, nano learning y reboardings.</p>
-                            </div>
-                        </li>
-                        <li class="services-list-item">
-                            <p>03</p>
-                            <div>
-                                <h3>Catalizadores de momentum</h3>
-                                <p>Análisis de mercado, video podcast narrativo, meme marketing y video newsletters.</p>
-                            </div>
-                        </li>
-                        <li class="services-list-item">
-                            <p>04</p>
-                            <div>
-                                <h3>Swag</h3>
-                                <p>Brand styling, influencer marketing, sponsorship content, series, películas y videojuegos originales.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="CTA" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
+
+        <!-- Casos de estudio -->
+        <section class="section section--cream on-cream" id="casos" aria-labelledby="casos-title">
+            <div class="container">
+                <header class="head">
+                    <h2 class="head__title" id="casos-title">Casos de estudio</h2>
+                    <p class="head__lead">Del plato en la mesa a la app en el celular: así se ve nuestro trabajo.</p>
+                </header>
+
+                <div class="cases">
+                    <article class="case-feature">
+                        <div class="case-feature__mosaic">
+                            <img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en Patio Sanduchería" width="1000" height="1250" loading="lazy" decoding="async">
+                            <img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones en Patio Sanduchería" width="1000" height="1250" loading="lazy" decoding="async">
+                            <img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo de Patio Sanduchería" width="900" height="1600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="case-feature__body">
+                            <p class="case-feature__brand">Patio Sanduchería</p>
+                            <h3 class="case-feature__title">Un sistema de contenido para Instagram, de la sesión de fotos a la publicación</h3>
+                            <p class="case-feature__text">Producimos las sesiones, editamos y publicamos el contenido, y diseñamos una tarjeta para pedir reseñas al final de cada servicio.</p>
+                            <ul class="case-feature__tags">
+                                <li class="tag">Fotografía</li>
+                                <li class="tag">Video</li>
+                                <li class="tag">Redes sociales</li>
+                                <li class="tag">Reseñas</li>
+                            </ul>
+                            <button class="btn btn--lime case-feature__cta" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Quiero algo así</button>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <img class="case__img" src="assets/img/fintech-dolarapp.webp" alt="Producto y tarjeta en escena: DolarApp" width="900" height="900" loading="lazy" decoding="async">
+                        <div class="case__body">
+                            <h3 class="case__brand">DolarApp</h3>
+                            <p class="case__text">La app y la tarjeta de DolarApp en una escena de producto.</p>
+                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
+                        </div>
+                    </article>
+                    <article class="case">
+                        <img class="case__img" src="assets/img/fintech-falabella.webp" alt="App y tarjeta CMR en escena: Banco Falabella" width="900" height="900" loading="lazy" decoding="async">
+                        <div class="case__body">
+                            <h3 class="case__brand">Banco Falabella</h3>
+                            <p class="case__text">La banca digital y la tarjeta CMR sobre una mesa de madera.</p>
+                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
+                        </div>
+                    </article>
+                    <article class="case">
+                        <img class="case__img" src="assets/img/fintech-bitpay.webp" alt="Billetera cripto en 3D: BitPay" width="900" height="900" loading="lazy" decoding="async">
+                        <div class="case__body">
+                            <h3 class="case__brand">BitPay</h3>
+                            <p class="case__text">Una billetera 3D con monedas cripto para contar el producto.</p>
+                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
+                        </div>
+                    </article>
                 </div>
-                
-                <div class="services-visual">
-                    <figure><img src="assets/images/Cubo_Seekers.gif" alt="Equipo de Seekers trabajando"></figure>
-                </div>
+
+                <p class="cases__more">¿Tu restaurante o tu hotel es el siguiente? <a class="link" href="#contacto">Hablemos</a>.</p>
             </div>
-        </section>
-        <!--Decor-->
-        <section id="decor">
         </section>
     </main>
-    <!--Footer-->
-    <footer class="footer">
-        <div class="wrapper">
-            <h2>¡Rompe tus métricas de crecimiento con Seekers hoy!</h2>
-            <P>Inicia el desarrollo de tu estrategia de crecimiento especializada.</P>
-            <button class="CTA" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
-            <p>O envíanos un email → <a href="mailto:david@seekers-latam.com">david@seekers-latam.com</a></p>
-        </div>
-        <div>
-            <p class="footer-copyright">© 2024 Seekers. Todos los derechos reservados.</p>
+
+    <!-- Pie de página -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer__cta">
+                <h2 class="footer__title">¿Listo para llenar tus mesas y habitaciones?</h2>
+                <div class="footer__actions">
+                    <button class="btn btn--lime" type="button" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}'>Agenda una llamada</button>
+                    <a class="link link--lime" href="mailto:david@seekers-latam.com">david@seekers-latam.com</a>
+                </div>
+            </div>
+
+            <div class="footer__cols">
+                <div>
+                    <p class="footer__col-title">Explora</p>
+                    <ul class="footer__list">
+                        <li><a href="#ventajas">Ventajas</a></li>
+                        <li><a href="#cifras">Cifras</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#casos">Casos de estudio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__col-title">Servicios</p>
+                    <ul class="footer__list">
+                        <li><a href="#servicios">Fotografía gastronómica</a></li>
+                        <li><a href="#servicios">Video y reels</a></li>
+                        <li><a href="#servicios">Estrategia y redes</a></li>
+                        <li><a href="#servicios">Hoteles y destinos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__col-title">Contacto</p>
+                    <ul class="footer__list">
+                        <li><a href="mailto:david@seekers-latam.com">david@seekers-latam.com</a></li>
+                        <li><a href="#contacto" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' onclick="event.preventDefault();">Agenda una llamada</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__col-title">Dónde estamos</p>
+                    <ul class="footer__list">
+                        <li>Colombia</li>
+                        <li>Trabajamos en toda Latinoamérica</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img class="footer__wordmark" src="assets/brand/Logo.svg" alt="Seekers" width="1100" height="228">
+
+            <p class="footer__legal">© 2026 Seekers LATAM S.A.S. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <!--Barra de navegación flotante-->
-    <nav class="floating-nav">
+
+    <!-- Navegación flotante -->
+    <nav class="float-nav" aria-label="Secciones">
         <ul>
-            <li><a href="#process">Proceso</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#" data-cal-link="seekers/intro" data-cal-namespace="intro" data-cal-config='{"layout":"month_view"}' onclick="event.preventDefault();">Contacto</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#casos">Casos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    <!-- Cal.com-->
+
+    <!-- Cal.com -->
     <script type="text/javascript">
     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
     Cal("init", "intro", {origin:"https://app.cal.com"});
     Cal.ns.intro("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#211828"},"dark":{"cal-brand":"#FFFBEE"}},"hideEventTypeDetails":false,"layout":"month_view"});
     </script>
 
-
+    <script src="js/main.js" defer></script>
 </body>
 </html>
