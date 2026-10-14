@@ -579,68 +579,112 @@ footer[id] {
 }
 
 /* --------------------------------------------------------------------------
-   Ventajas (fácil y sin enredos)
+   Ventajas: tres highlights (foto arriba, panel de color abajo)
    -------------------------------------------------------------------------- */
+.head--center {
+    text-align: center;
+}
+
+.head--center .head__title {
+    max-width: none;
+    margin-inline: auto;
+    font-size: clamp(1.75rem, 4.8vw, 4.1rem);
+}
+
+.head__line {
+    display: block;
+}
+
 .perks {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
 }
 
 .perk {
-    grid-column: span 6;
+    --focus: 50% 50%;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    min-height: 16rem;
-    padding: clamp(1.5rem, 3vw, 2.25rem);
+    overflow: hidden;
     border-radius: var(--r-lg);
+}
+
+.perk__img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: var(--focus);
     background: var(--ink-2);
 }
 
-.perk--lime {
-    background: var(--lime);
-    color: var(--ink);
-}
-
-.perk__icon {
-    display: grid;
-    place-items: center;
-    width: 3.25rem;
-    height: 3.25rem;
-    margin-bottom: auto;
-    border-radius: 50%;
-    background: var(--lime);
-    color: var(--ink);
-}
-
-.perk--lime .perk__icon {
-    background: var(--ink);
-    color: var(--lime);
+.perk__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: clamp(1.4rem, 2.6vw, 2rem);
 }
 
 .perk__title {
-    padding-top: 2rem;
-    font-size: clamp(1.45rem, 2.3vw, 2rem);
+    margin: 0;
+    font-size: clamp(1.5rem, 2.3vw, 1.95rem);
+    line-height: 1.05;
 }
 
 .perk__text {
-    max-width: 34rem;
-    color: var(--on-ink-muted);
+    max-width: 30rem;
 }
 
-.perk--lime .perk__text {
+.perk--lime {
+    --focus: 50% 28%;
+    background: var(--lime);
+    color: var(--ink);
+}
+
+.perk--plum {
+    background: var(--ink-3);
+    color: var(--cream);
+}
+
+.perk--cream {
+    background: var(--cream);
+    color: var(--ink);
+}
+
+.perk--lime .perk__text,
+.perk--cream .perk__text {
     color: rgba(33, 24, 40, 0.78);
 }
 
-@media (min-width: 56rem) {
-    .perk--wide {
-        grid-column: span 3;
-        min-height: 20rem;
+.perk--plum .perk__text {
+    color: var(--on-ink-muted);
+}
+
+/* Tablet: foto a la izquierda y texto a la derecha, para que la sección no se alargue */
+@media (min-width: 40rem) and (max-width: 55.99rem) {
+    .perk {
+        flex-direction: row;
     }
 
-    .perk--third {
-        grid-column: span 2;
+    .perk__img {
+        flex: none;
+        width: 42%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .perk__body {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 56rem) {
+    .perks {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    .perk__img {
+        aspect-ratio: 4 / 5;
     }
 }
 
