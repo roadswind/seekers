@@ -365,13 +365,13 @@
                             </div>
                         </div>
                         <div class="svc">
-                            <button class="svc__tab" role="tab" id="tab-hoteles" aria-controls="panel-hoteles" aria-selected="false" tabindex="-1">Hoteles y destinos</button>
-                            <div class="svc__panel" role="tabpanel" id="panel-hoteles" aria-labelledby="tab-hoteles" hidden>
-                                <p class="svc__text">Contamos la experiencia completa: habitaciones, gastronomía, entorno y la gente que lo vive.</p>
+                            <button class="svc__tab" role="tab" id="tab-series" aria-controls="panel-series" aria-selected="false" tabindex="-1">Series de formato largo</button>
+                            <div class="svc__panel" role="tabpanel" id="panel-series" aria-labelledby="tab-series" hidden>
+                                <p class="svc__text">Historias con más profundidad sobre tu cocina, tu equipo y tu destino, para que tu marca se quede en la memoria.</p>
                                 <ul class="svc__list">
-                                    <li class="tag">Recorridos en video</li>
-                                    <li class="tag">Habitaciones y espacios</li>
-                                    <li class="tag">Contenido de destino</li>
+                                    <li class="tag">Series y mini documentales</li>
+                                    <li class="tag">Historias de origen y de producto</li>
+                                    <li class="tag">Guion, producción y posproducción</li>
                                 </ul>
                             </div>
                         </div>
@@ -381,7 +381,7 @@
                         <img data-tab-image class="is-active" src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido, fotografiado de cerca" width="900" height="1600" loading="lazy" decoding="async">
                         <img data-tab-image src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en el restaurante, fotograma de un reel" width="1000" height="1250" loading="lazy" decoding="async">
                         <img data-tab-image src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel" width="1000" height="1250" loading="lazy" decoding="async">
-                        <img data-tab-image src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en una terraza soleada" width="900" height="1600" loading="lazy" decoding="async">
+                        <img data-tab-image src="assets/img/patio-primer-bocado.webp" alt="Un comensal disfruta su primer bocado" width="1000" height="1250" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -391,105 +391,140 @@
         <section class="section section--cream on-cream" id="casos" aria-labelledby="casos-title">
             <div class="container">
                 <header class="head">
-                    <h2 class="head__title" id="casos-title">Casos de estudio</h2>
-                    <p class="head__lead">Del plato en la mesa a la app en el celular: así se ve nuestro trabajo.</p>
+                    <h2 class="head__title" id="casos-title">Contenido que se antoja</h2>
+                    <p class="head__lead">Una muestra de lo que hacemos. Toca cualquier pieza para conocer el proyecto.</p>
                 </header>
 
-                <div class="cases">
-                    <article class="case-feature">
-                        <div class="case-feature__mosaic">
-                            <img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en Patio Sanduchería" width="1000" height="1250" loading="lazy" decoding="async">
-                            <img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones en Patio Sanduchería" width="1000" height="1250" loading="lazy" decoding="async">
-                            <img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo de Patio Sanduchería" width="900" height="1600" loading="lazy" decoding="async">
+                <ul class="works">
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/patio-sandwich.webp" alt="Sándwich de cochinillo con queso derretido, fotografiado de cerca." width="900" height="1600" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Patio Sanduchería</span>
+                            <span class="work__kind">Fotografía gastronómica</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Patio Sanduchería</h3>
+                            <p>Producimos las sesiones, editamos y publicamos el contenido de Instagram del restaurante. Esta foto muestra el sándwich de cochinillo con queso derretido, el plato que más se antoja.</p>
+                            <ul><li class="tag">Fotografía</li><li class="tag">Instagram</li></ul>
                         </div>
-                        <div class="case-feature__body">
-                            <p class="case-feature__brand">Patio Sanduchería</p>
-                            <h3 class="case-feature__title">Un sistema de contenido para Instagram, de la sesión de fotos a la publicación</h3>
-                            <p class="case-feature__text">Producimos las sesiones, editamos y publicamos el contenido, y diseñamos una tarjeta para pedir reseñas al final de cada servicio.</p>
-                            <ul class="case-feature__tags">
-                                <li class="tag">Fotografía</li>
-                                <li class="tag">Video</li>
-                                <li class="tag">Redes sociales</li>
-                                <li class="tag">Reseñas</li>
-                            </ul>
-                            <div class="cta-slot">
-                            <!-- Google Calendar Appointment Scheduling begin -->
-                            <script>
-                            (function() {
-                              var target = document.currentScript;
-                              window.addEventListener('load', function() {
-                                calendar.schedulingButton.load({
-                                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                                  color: '#039BE5',
-                                  label: 'Programar una cita',
-                                  target,
-                                });
-                              });
-                            })();
-                            </script>
-                            <!-- end Google Calendar Appointment Scheduling -->
-                            </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/fintech-falabella.webp" alt="App y tarjeta CMR en escena: Banco Falabella." width="900" height="900" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Banco Falabella</span>
+                            <span class="work__kind">Producto en 3D</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Banco Falabella</h3>
+                            <p>La banca digital y la tarjeta CMR sobre una mesa de madera, en una escena de producto en 3D.</p>
+                            <ul><li class="tag">Fintech</li><li class="tag">3D</li></ul>
                         </div>
-                    </article>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/patio-gol.webp" alt="Una familia celebra un gol en Patio Sanduchería." width="1000" height="1250" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Patio Sanduchería</span>
+                            <span class="work__kind">Reels y video</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Patio Sanduchería</h3>
+                            <p>Fotograma de un reel: una familia celebra un gol en el restaurante. Contenido con emoción real para mostrar el ambiente del lugar.</p>
+                            <ul><li class="tag">Video</li><li class="tag">Reels</li></ul>
+                        </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/patio-plato.webp" alt="Plato de pollo con ensalada y tostones en Patio Sanduchería." width="1000" height="1250" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Patio Sanduchería</span>
+                            <span class="work__kind">Fotografía gastronómica</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Patio Sanduchería</h3>
+                            <p>Plato de pollo con ensalada y tostones. Parte de las sesiones en sitio con las que alimentamos el calendario de contenido del restaurante.</p>
+                            <ul><li class="tag">Fotografía</li><li class="tag">Carta y redes</li></ul>
+                        </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/patio-tarde-de-sol.webp" alt="Una comensal disfruta un postre en una terraza soleada." width="900" height="1600" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Patio Sanduchería</span>
+                            <span class="work__kind">Estilo de vida</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Patio Sanduchería</h3>
+                            <p>Una comensal disfruta un postre en la terraza. Fotografía de ambiente que cuenta la experiencia de estar en el restaurante, no solo el plato.</p>
+                            <ul><li class="tag">Fotografía</li><li class="tag">Ambiente</li></ul>
+                        </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/fintech-bitpay.webp" alt="Billetera cripto en 3D: BitPay." width="900" height="900" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">BitPay</span>
+                            <span class="work__kind">Producto en 3D</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>BitPay</h3>
+                            <p>Una billetera en 3D con monedas cripto para contar el producto de BitPay de forma visual.</p>
+                            <ul><li class="tag">Fintech</li><li class="tag">3D</li></ul>
+                        </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/patio-domicilio.webp" alt="Dos manos se entregan un domicilio en bolsa de papel." width="1000" height="1250" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">Patio Sanduchería</span>
+                            <span class="work__kind">Delivery</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>Patio Sanduchería</h3>
+                            <p>Dos manos se entregan un domicilio en bolsa de papel. Imágenes pensadas para que el delivery también se vea cuidado y antojable.</p>
+                            <ul><li class="tag">Fotografía</li><li class="tag">Delivery</li></ul>
+                        </div>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-work aria-haspopup="dialog">
+                            <span class="work__frame"><img src="assets/img/fintech-dolarapp.webp" alt="La app y la tarjeta de DolarApp en una escena de producto." width="900" height="900" loading="lazy" decoding="async"><span class="work__plus" aria-hidden="true">+</span></span>
+                            <span class="work__brand">DolarApp</span>
+                            <span class="work__kind">Producto en 3D</span>
+                        </button>
+                        <div class="work__detail" hidden>
+                            <h3>DolarApp</h3>
+                            <p>Una escena en 3D con la app y la tarjeta de DolarApp, creada para contar el producto en redes y campañas.</p>
+                            <ul><li class="tag">Fintech</li><li class="tag">3D</li></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                    <article class="case">
-                        <img class="case__img" src="assets/img/fintech-dolarapp.webp" alt="Producto y tarjeta en escena: DolarApp" width="900" height="900" loading="lazy" decoding="async">
-                        <div class="case__body">
-                            <h3 class="case__brand">DolarApp</h3>
-                            <p class="case__text">La app y la tarjeta de DolarApp en una escena de producto.</p>
-                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
-                        </div>
-                    </article>
-                    <article class="case">
-                        <img class="case__img" src="assets/img/fintech-falabella.webp" alt="App y tarjeta CMR en escena: Banco Falabella" width="900" height="900" loading="lazy" decoding="async">
-                        <div class="case__body">
-                            <h3 class="case__brand">Banco Falabella</h3>
-                            <p class="case__text">La banca digital y la tarjeta CMR sobre una mesa de madera.</p>
-                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
-                        </div>
-                    </article>
-                    <article class="case">
-                        <img class="case__img" src="assets/img/fintech-bitpay.webp" alt="Billetera cripto en 3D: BitPay" width="900" height="900" loading="lazy" decoding="async">
-                        <div class="case__body">
-                            <h3 class="case__brand">BitPay</h3>
-                            <p class="case__text">Una billetera 3D con monedas cripto para contar el producto.</p>
-                            <ul class="case__tags"><li class="tag">Fintech</li><li class="tag">3D</li></ul>
-                        </div>
-                    </article>
+        <!-- Cierre -->
+        <section class="closing" id="contacto" aria-labelledby="closing-title">
+            <img class="closing__bg" src="assets/img/patio-gol.webp" alt="" width="1000" height="1250" loading="lazy" decoding="async">
+            <div class="closing__inner">
+                <h2 class="closing__title" id="closing-title">Hagamos que todos quieran <em>reservar</em></h2>
+                <div class="cta-slot">
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <script>
+                (function() {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
+                      color: '#039BE5',
+                      label: 'Programar una cita',
+                      target,
+                    });
+                  });
+                })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
                 </div>
-
-                <p class="cases__more">¿Tu restaurante o tu hotel es el siguiente? <a class="link" href="#contacto">Hablemos</a>.</p>
             </div>
         </section>
     </main>
 
     <!-- Pie de página -->
-    <footer class="footer" id="contacto">
+    <footer class="footer">
         <div class="container">
-            <div class="footer__cta">
-                <h2 class="footer__title">¿Listo para llenar tus mesas y habitaciones?</h2>
-                <div class="footer__actions">
-                    <div class="cta-slot">
-                    <!-- Google Calendar Appointment Scheduling begin -->
-                    <script>
-                    (function() {
-                      var target = document.currentScript;
-                      window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                          color: '#039BE5',
-                          label: 'Programar una cita',
-                          target,
-                        });
-                      });
-                    })();
-                    </script>
-                    <!-- end Google Calendar Appointment Scheduling -->
-                    </div>
-                    <a class="link link--lime" href="mailto:david@seekers-latam.com">david@seekers-latam.com</a>
-                </div>
-            </div>
-
             <div class="footer__cols">
                 <div>
                     <p class="footer__col-title">Explora</p>
@@ -506,7 +541,7 @@
                         <li><a href="#servicios">Fotografía gastronómica</a></li>
                         <li><a href="#servicios">Video y reels</a></li>
                         <li><a href="#servicios">Estrategia y redes</a></li>
-                        <li><a href="#servicios">Hoteles y destinos</a></li>
+                        <li><a href="#servicios">Series de formato largo</a></li>
                     </ul>
                 </div>
                 <div>
@@ -558,6 +593,20 @@
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
+    <!-- Ficha de proyecto -->
+    <dialog class="work-dialog" id="work-dialog" aria-labelledby="work-dialog-title">
+        <button class="work-dialog__close" type="button" data-work-close aria-label="Cerrar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <img class="work-dialog__img" alt="" width="900" height="900">
+        <div class="work-dialog__body">
+            <h3 class="work-dialog__title" id="work-dialog-title"></h3>
+            <p class="work-dialog__text"></p>
+            <ul class="work-dialog__tags"></ul>
+            <a class="work-dialog__cta" href="#contacto" data-work-close>Quiero algo así</a>
+        </div>
+    </dialog>
 
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script src="js/main.js" defer></script>

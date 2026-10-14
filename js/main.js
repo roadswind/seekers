@@ -143,4 +143,38 @@
 
         byId.forEach((_, target) => spy.observe(target));
     }
+
+    /* 6. Casos: ficha de proyecto en un diálogo -------------------------------- */
+    const dialog = document.getElementById("work-dialog");
+    if (dialog && typeof dialog.showModal === "function") {
+        const dImg = dialog.querySelector(".work-dialog__img");
+        const dTitle = dialog.querySelector(".work-dialog__title");
+        const dText = dialog.querySelector(".work-dialog__text");
+        const dTags = dialog.querySelector(".work-dialog__tags");
+        let opener = null;
+
+        document.querySelectorAll("[data-work]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const item = button.closest(".work");
+                const detail = item.querySelector(".work__detail");
+                const img = button.querySelector("img");
+                dImg.src = img.currentSrc || img.src;
+                dImg.alt = img.alt;
+                dImg.width = img.naturalWidth || img.width;
+                dImg.height = img.naturalHeight || img.height;
+                dTitle.textContent = detail.querySelector("h3").textContent;
+                dText.textContent = detail.querySelector("p").textContent;
+                dTags.innerHTML = detail.querySelector("ul").innerHTML;
+                opener = button;
+                dialog.showModal();
+            });
+        });
+
+        dialog.addEventListener("click", (event) => {
+            if (event.target === dialog || event.target.closest("[data-work-close]")) dialog.close();
+        });
+        dialog.addEventListener("close", () => {
+            if (opener) opener.focus({ preventScroll: true });
+        });
+    }
 })();
