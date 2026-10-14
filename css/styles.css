@@ -693,13 +693,13 @@ footer[id] {
    -------------------------------------------------------------------------- */
 .stats__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin-top: clamp(2.5rem, 6vw, 5rem);
     border-top: 1px solid rgba(33, 24, 40, 0.28);
 }
 
 .stat {
-    padding: 1.75rem 1rem 0 0;
+    padding: 1.75rem 1rem 1.25rem 0;
 }
 
 .stat__value {
@@ -712,7 +712,7 @@ footer[id] {
 }
 
 .stat__label {
-    max-width: 16rem;
+    max-width: 18rem;
     margin-top: 0.75rem;
     font-size: 1rem;
     line-height: 1.4;
@@ -722,9 +722,9 @@ footer[id] {
     font-weight: 700;
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 40rem) {
     .stats__grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .stat {
