@@ -567,6 +567,15 @@ footer[id] {
     transition: filter 0.3s, opacity 0.3s;
 }
 
+/* Nombres en texto mientras llegan los logos */
+.logos__word {
+    flex: none;
+    white-space: nowrap;
+    font: 700 clamp(1.3rem, 2.2vw, 1.75rem) / 1 var(--font-display);
+    letter-spacing: -0.02em;
+    opacity: 0.75;
+}
+
 .logos__set img:hover {
     filter: none;
     opacity: 1;
