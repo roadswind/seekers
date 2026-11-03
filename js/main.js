@@ -159,6 +159,7 @@
         const dTitle = dialog.querySelector(".work-dialog__title");
         const dText = dialog.querySelector(".work-dialog__text");
         const dTags = dialog.querySelector(".work-dialog__tags");
+        const dVideo = dialog.querySelector(".work-dialog__video");
         let opener = null;
 
         document.querySelectorAll("[data-work]").forEach((button) => {
@@ -170,11 +171,23 @@
                 dImg.alt = img.alt;
                 dImg.width = img.naturalWidth || img.width;
                 dImg.height = img.naturalHeight || img.height;
+                const videoSrc = button.dataset.video;
+                if (dVideo && videoSrc) {
+                    dVideo.poster = dImg.src;
+                    dVideo.src = videoSrc;
+                    dVideo.setAttribute("aria-label", img.alt);
+                    dVideo.hidden = false;
+                    dImg.hidden = true;
+                } else if (dVideo) {
+                    dVideo.hidden = true;
+                    dImg.hidden = false;
+                }
                 dTitle.textContent = detail.querySelector("h3").textContent;
                 dText.textContent = detail.querySelector("p").textContent;
                 dTags.innerHTML = detail.querySelector("ul").innerHTML;
                 opener = button;
                 dialog.showModal();
+                if (dVideo && videoSrc && !reduceMotion) dVideo.play().catch(() => {});
             });
         });
 
@@ -182,6 +195,11 @@
             if (event.target === dialog || event.target.closest("[data-work-close]")) dialog.close();
         });
         dialog.addEventListener("close", () => {
+            if (dVideo) {
+                dVideo.pause();
+                dVideo.removeAttribute("src");
+                dVideo.load();
+            }
             if (opener) opener.focus({ preventScroll: true });
         });
     }
