@@ -558,22 +558,13 @@ footer[id] {
 }
 
 .logos__set img {
-    height: 2.25rem;
+    height: var(--logo-h, 2.5rem);
     width: auto;
-    max-width: 9rem;
+    max-width: none;
     object-fit: contain;
     filter: grayscale(1);
     opacity: 0.75;
     transition: filter 0.3s, opacity 0.3s;
-}
-
-/* Nombres en texto mientras llegan los logos */
-.logos__word {
-    flex: none;
-    white-space: nowrap;
-    font: 700 clamp(1.3rem, 2.2vw, 1.75rem) / 1 var(--font-display);
-    letter-spacing: -0.02em;
-    opacity: 0.75;
 }
 
 .logos__set img:hover {
@@ -917,7 +908,8 @@ footer[id] {
     background: var(--ink-2);
 }
 
-.services__media img {
+.services__media img,
+.services__media video {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -927,7 +919,8 @@ footer[id] {
     transition: opacity 0.6s var(--ease);
 }
 
-.services__media img.is-active {
+.services__media img.is-active,
+.services__media video.is-active {
     opacity: 1;
 }
 
@@ -1258,14 +1251,8 @@ footer[id] {
     text-underline-offset: 0.3em;
 }
 
-.footer__wordmark {
-    width: 100%;
-    max-width: 62rem;
-    margin: 1rem auto 0;
-}
-
 .footer__legal {
-    padding-block: 1.75rem 7rem;
+    padding-block: 2.5rem 7rem;
     font-size: 0.9375rem;
     color: var(--on-ink-muted);
 }
@@ -1357,7 +1344,14 @@ footer[id] {
         overflow-x: auto;
     }
 
-    .services__media img {
+    .services__media img,
+    .services__media video {
         transition: none;
     }
+}
+
+/* Popup de agendamiento de Google: fondo sólido por si el iframe llega transparente */
+iframe[src*="calendar.google.com"] {
+    background: #fff;
+    color-scheme: light;
 }

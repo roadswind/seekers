@@ -83,7 +83,15 @@
                 tab.setAttribute("aria-selected", String(active));
                 tab.tabIndex = active ? 0 : -1;
                 if (panel) panel.hidden = !active;
-                if (images[i]) images[i].classList.toggle("is-active", active);
+                const media = images[i];
+                if (media) media.classList.toggle("is-active", active);
+                if (media && media.tagName === "VIDEO") {
+                    if (active && !reduceMotion) {
+                        media.play().catch(() => {});
+                    } else {
+                        media.pause();
+                    }
+                }
             });
             if (moveFocus) tabs[index].focus();
         };
