@@ -746,6 +746,10 @@ footer[id] {
     gap: 0.5rem;
 }
 
+.quotes-nav[hidden] {
+    display: none;
+}
+
 .round-btn {
     display: grid;
     place-items: center;
