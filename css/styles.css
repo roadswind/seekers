@@ -154,30 +154,11 @@ footer[id] {
 /* --------------------------------------------------------------------------
    Enlaces y botón de agendar (Google Calendar)
    -------------------------------------------------------------------------- */
-/* Botón de agendar: abre el calendario de Google en un diálogo propio */
-.btn-book {
+/* Contenedor del botón de Google Calendar (el botón lo dibuja el script de Google) */
+.cta-slot {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.8rem 1.5rem;
-    border: 0;
-    border-radius: 999px;
-    background: var(--cream);
-    color: var(--ink);
-    font: 700 1rem/1.2 var(--font-body);
-    white-space: nowrap;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s var(--ease);
-}
-
-.btn-book:hover {
-    background: var(--lime);
-    transform: translateY(-1px);
-}
-
-.btn-book:focus-visible {
-    outline: 3px solid var(--lime);
-    outline-offset: 3px;
+    vertical-align: middle;
 }
 
 .link {
@@ -1390,90 +1371,14 @@ footer[id] {
     }
 }
 
-/* --------------------------------------------------------------------------
-   Diálogo para agendar (calendario de Google embebido)
-   -------------------------------------------------------------------------- */
-body:has(dialog[open]) {
-    overflow: hidden;
-}
-
-.book-dialog {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    max-height: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: var(--ink);
-    color: var(--cream);
-    overflow: hidden;
-}
-
-.book-dialog[open] {
-    display: flex;
-    flex-direction: column;
-}
-
-.book-dialog::backdrop {
-    background: rgba(33, 24, 40, 0.72);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-}
-
-.book-dialog__bar {
-    flex: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.5rem 0.75rem 0.5rem 1.25rem;
-}
-
-.book-dialog__title {
-    font: 700 1.125rem/1.2 var(--font-display);
-}
-
-.book-dialog__close {
-    display: grid;
-    place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
-    border: 0;
-    border-radius: 50%;
-    background: var(--cream);
-    color: var(--ink);
-    cursor: pointer;
-}
-
-.book-dialog__frame {
-    flex: 1;
-    width: 100%;
-    min-width: 0;
-    min-height: 0;
-    border: 0;
+/* Popup de agendamiento de Google: fondo sólido por si el iframe llega transparente */
+iframe[src*="calendar.google.com"] {
     background: #fff;
     color-scheme: light;
 }
 
-.book-dialog__fallback {
-    flex: none;
-    padding: 0.75rem 1.25rem calc(0.75rem + env(safe-area-inset-bottom));
-    font-size: 0.875rem;
-    text-align: center;
-    color: var(--on-ink-muted);
-    text-decoration: underline;
-    text-underline-offset: 0.3em;
-}
-
-@media (min-width: 48rem) {
-    .book-dialog {
-        inset: 0;
-        width: min(44rem, calc(100% - 2rem));
-        height: min(50rem, calc(100% - 2rem));
-        margin: auto;
-        border-radius: var(--r-lg);
-    }
+/* Los casos en video muestran el botón de reproducir siempre */
+.work--video .work__plus {
+    opacity: 1;
+    transform: none;
 }
