@@ -203,4 +203,24 @@
             if (opener) opener.focus({ preventScroll: true });
         });
     }
+
+    /* 7. Agendar: calendario de Google dentro de un diálogo propio ------------- */
+    const bookDialog = document.getElementById("book-dialog");
+    if (bookDialog) {
+        const frame = bookDialog.querySelector("iframe");
+        const fallback = bookDialog.querySelector(".book-dialog__fallback");
+        document.querySelectorAll("[data-book]").forEach((button) => {
+            button.addEventListener("click", () => {
+                if (typeof bookDialog.showModal !== "function") {
+                    window.open(fallback.href, "_blank", "noopener");
+                    return;
+                }
+                if (!frame.getAttribute("src")) frame.setAttribute("src", frame.dataset.src);
+                bookDialog.showModal();
+            });
+        });
+        bookDialog.addEventListener("click", (event) => {
+            if (event.target === bookDialog || event.target.closest("[data-book-close]")) bookDialog.close();
+        });
+    }
 })();

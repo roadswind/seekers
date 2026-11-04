@@ -35,7 +35,6 @@
     <link rel="preload" href="assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Google Calendar Appointment Scheduling: estilos y script compartidos por todos los botones -->
-    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -75,23 +74,7 @@
                     </g>
                 </svg>
             </a>
-            <div class="cta-slot">
-            <!-- Google Calendar Appointment Scheduling begin -->
-            <script>
-            (function() {
-              var target = document.currentScript;
-              window.addEventListener('load', function() {
-                calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                  color: '#fffbee',
-                  label: 'Agenda una llamada',
-                  target,
-                });
-              });
-            })();
-            </script>
-            <!-- end Google Calendar Appointment Scheduling -->
-            </div>
+            <button class="btn-book" type="button" data-book>Agenda una llamada</button>
         </div>
     </header>
 
@@ -104,23 +87,7 @@
                     <h1 class="hero__title" id="hero-title">Recetas creativas para escalar tu negocio</h1>
                     <p class="hero__lead">Diseñamos estrategias para incrementar el ticket promedio, crecer tu base de clientes y aumentar la recurrencia mediante contenido editorial para plataformas digitales.</p>
                     <div class="hero__actions">
-                        <div class="cta-slot">
-                        <!-- Google Calendar Appointment Scheduling begin -->
-                        <script>
-                        (function() {
-                          var target = document.currentScript;
-                          window.addEventListener('load', function() {
-                            calendar.schedulingButton.load({
-                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                              color: '#fffbee',
-                              label: 'Agenda una llamada',
-                              target,
-                            });
-                          });
-                        })();
-                        </script>
-                        <!-- end Google Calendar Appointment Scheduling -->
-                        </div>
+                        <button class="btn-book" type="button" data-book>Agenda una llamada</button>
                         <a class="link link--lime" href="#casos">Ver casos de estudio</a>
                     </div>
                 </div>
@@ -284,7 +251,7 @@
                         <p class="stat__label"><strong>en ticket promedio</strong> gracias a contenido que vende los platos y experiencias de mayor margen.</p>
                     </li>
                     <li class="stat">
-                        <p class="stat__value" data-count="60" data-decimals="0" data-prefix="+">+60</p>
+                        <p class="stat__value" data-count="30" data-decimals="0" data-prefix="+">+30</p>
                         <p class="stat__label"><strong>restaurantes y hoteles</strong> en Latinoamérica ya crean con Seekers</p>
                     </li>
                 </ul>
@@ -442,23 +409,7 @@
             <img class="closing__bg" src="assets/img/cierre-still.webp" alt="" width="2000" height="1125" loading="lazy" decoding="async">
             <div class="closing__inner">
                 <h2 class="closing__title" id="closing-title">Hagamos que todos quieran <em>reservar</em></h2>
-                <div class="cta-slot">
-                <!-- Google Calendar Appointment Scheduling begin -->
-                <script>
-                (function() {
-                  var target = document.currentScript;
-                  window.addEventListener('load', function() {
-                    calendar.schedulingButton.load({
-                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                      color: '#fffbee',
-                      label: 'Agenda una llamada',
-                      target,
-                    });
-                  });
-                })();
-                </script>
-                <!-- end Google Calendar Appointment Scheduling -->
-                </div>
+                <button class="btn-book" type="button" data-book>Agenda una llamada</button>
             </div>
         </section>
     </main>
@@ -490,23 +441,7 @@
                     <ul class="footer__list">
                         <li><a href="mailto:david@seekers-latam.com">david@seekers-latam.com</a></li>
                         <li>
-                            <div class="cta-slot">
-                            <!-- Google Calendar Appointment Scheduling begin -->
-                            <script>
-                            (function() {
-                              var target = document.currentScript;
-                              window.addEventListener('load', function() {
-                                calendar.schedulingButton.load({
-                                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true',
-                                  color: '#fffbee',
-                                  label: 'Agenda una llamada',
-                                  target,
-                                });
-                              });
-                            })();
-                            </script>
-                            <!-- end Google Calendar Appointment Scheduling -->
-                            </div>
+                            <button class="btn-book" type="button" data-book>Agenda una llamada</button>
                         </li>
                     </ul>
                 </div>
@@ -534,6 +469,17 @@
     </nav>
 
     <!-- Ficha de proyecto -->
+    <dialog class="book-dialog" id="book-dialog" aria-label="Agenda una llamada con Seekers">
+        <div class="book-dialog__bar">
+            <p class="book-dialog__title">Agenda una llamada</p>
+            <button class="book-dialog__close" type="button" data-book-close aria-label="Cerrar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+        </div>
+        <iframe class="book-dialog__frame" title="Calendario para agendar una llamada con Seekers" data-src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true"></iframe>
+        <a class="book-dialog__fallback" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Nd72EZCLg7aZvyjCgqaN53acEMw7PBOD9H0MXaawJqIMXRKGFXi79KfjbBI-TnpKbLaOjQ97A?gv=true" target="_blank" rel="noopener">¿No carga? Ábrelo en una pestaña nueva</a>
+    </dialog>
+
     <dialog class="work-dialog" id="work-dialog" aria-labelledby="work-dialog-title">
         <button class="work-dialog__close" type="button" data-work-close aria-label="Cerrar">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -548,7 +494,6 @@
         </div>
     </dialog>
 
-    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>
